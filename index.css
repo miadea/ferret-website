@@ -1,0 +1,77 @@
+.myHeader {
+  background: url(1214webferretinsidepic.png) top center; 
+  background-size: cover;
+  min-height: 400px;
+}
+
+
+header {
+    width: 100%;
+    height: calc(100vh - 50px);
+    background: url(1214webferretinsidepic.png) top center;
+    background-size: cover;
+    -webkit-transition: height 0.3s;
+    -moz-transition: height 0.3s;
+    -ms-transition: height 0.3s;
+    -o-transition: height 0.3s;
+    transition: height 0.3s;
+}
+nav {
+  margin: 0 !important;
+  border: 0 !important;
+  width: 100%;
+  top: 0px;
+}
+
+section {
+  padding-top: 50px;
+}
+
+.affix-top {
+  margin-bottom: 49px;
+}
+
+.affix-bottom {
+  position: absolute;
+}
+
+.housing-circle {
+  max-height: 70px
+}
+
+/*
+@media all and (max-width: 660px) {
+    header h1#logo {
+        display: block;
+        float: none;
+        margin: 0 auto;
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+    }
+    header nav {
+        display: block;
+        float: none;
+        height: 50px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    header nav a {
+        line-height: 50px;
+        margin: 0 10px;
+    }
+    header.smaller {
+        height: 75px;
+    }
+    header.smaller h1#logo {
+        height: 40px;
+        line-height: 40px;
+        font-size: 30px;
+    }
+    header.smaller nav {
+        height: 35px;
+    }
+    header.smaller nav a {
+        line-height: 35px;
+    }
+}*/

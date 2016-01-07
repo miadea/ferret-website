@@ -1,141 +1,328 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- These meta tags come first. -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <title>All About Ferrets</title>
+<head>
+  <!-- These meta tags come first. -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <title>Ferret Central</title>
 
-    <!-- Include the CSS -->
-    <link href="toolkit-minimal.min.css" rel="stylesheet">
-  </head>
-  <body>
+  <!-- Include the CSS -->
+  <link href="toolkit-minimal.min.css" rel="stylesheet">
+  <link href="index.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+  </header>
 
-    <div class="container">
-      <div class="p-y-lg p-x" style="background: url(http://s7d1.scene7.com/is/image/PETCO/ferret-110515-img-727x200-topical-headers-d) top center; background-size: cover">
-  <nav class="navbar navbar-transparent m-b-0">
+  <nav class="navbar  navbar-static-top navbar-inverse">
     <div class="container-fluid">
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-com">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">
-          <h4 class="text-uppercase m-y-0">Ferret Central</h4>
+        <a class="navbar-brand" href="+#">
+          Ferret Central
         </a>
       </div>
-      <div class="navbar-collapse collapse" id="navbar-collapse-com">
-        <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
+      <ul class="nav navbar-nav">
+        <li><a href="+#sectionOne">Housing<span class="sr-only">(current)</span></a></li>
+        <li><a href="+#sectionTwo">Accessories<span class="sr-only">(current)</span></a></li>
+        <li><a href="+#sectionThree">Health</a></li>
+        <li><a href="+#sectionFour">Adopt</a></li>
+      </ul>
     </div>
   </nav>
-</div>
-      <p>Ferrets make wonderful companions, however they may not be the best pet for everyone. Here are a few things to consider before even thinking about getting one.</p> 
-      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingOne">
-      <h4 class="panel-title">
-        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          Is my ferret legal?
-        </a>
-      </h4>
-    </div>
-    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-      <div class="panel-body">
-        There are different regulations depending on your country, state, or city concerning the legality of owning a ferret. Information regarding your area's regulations can be found through your local Human Society or a veterinarian.
+  <div class="container-fluid">
+    <section id="sectionOne">
+      <div class="row">
+        <div class="col-md-2 col-md-offset-1">
+          <h2>Housing</h2>
+          <hr>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <ul class="featured-list featured-list-bordered">
+            <li class="m-b-md">
+              <a href="" class="featured-list-icon">
+                <span class="icon icon-home"></span>
+              </a>
+
+              <h3>Cages</h3>
+              <p>
+                Browse ferret cages
+              </p>
+            </li>
+
+            <li>
+              <a href="" class="featured-list-icon">
+                <span class="icon icon-inbox"></span>
+              </a>
+              <h3>Bedding</h3>
+              <p>
+                Bed sets hammocks and more
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-6">
+          <ul class="featured-list featured-list-bordered">
+            <li class="m-b-md">
+              <a href="" class="featured-list-icon">
+                <span class="icon icon-network"></span>
+              </a>
+
+              <h3>Toys</h3>
+              <p>
+                Find fun new toys for your ferret
+              </p>
+            </li>
+
+            <li>
+              <a href="" class="featured-list-icon">
+                <span class="icon icon-bowl"></span>
+              </a>
+              <h3>Food Bowls</h3>
+              <p>
+                Ceramic metal and wood
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="sectionTwo">
+      <div class="row p-t-md">
+        <div class="col-xs-6">
+          <h3 class="text-center">Shop Accessories</h3>
+          <div class="well" style="max-height: 300px;overflow: auto;">
+            <ul id="check-list-box" class="list-group checked-list-box">
+              <li class="list-group-item">Collars</li>
+              <li class="list-group-item" data-color="success">Harnesses</li>
+              <li class="list-group-item" data-color="info">Hoodies</li>
+              <li class="list-group-item" data-color="warning">Coats</li>
+            </ul>
+            <br />
+            <button class="btn btn-primary col-xs-12" id="get-checked-data">Search Online Stores</button>
+          </div>
+        </div>
+
+      <div class="row col-md-6">
+        <div id="carousel-example-generic-2" class="carousel carousel-light slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic-2" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic-2" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic-2" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic-2" data-slide-to="3"></li>
+          </ol>
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img src="a1.jpg">
+            </div>
+            <div class="item">
+              <img src="a2.gif" alt="Second slide">
+            </div>
+            <div class="item">
+              <img src="a4.jpg" alt="Third slide">
+            </div>
+            <div class="item">
+              <img src="a3.gif" alt="Fourth slide">
+            </div>
+          </div>
+          <a class="left carousel-control" href="#carousel-example-generic-2" role="button" data-slide="prev">
+            <span class="icon icon-chevron-thin-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic-2" role="button" data-slide="next">
+            <span class="icon icon-chevron-thin-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingTwo">
-      <h4 class="panel-title">
-        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          Can I afford a ferret?
-        </a>
-      </h4>
-    </div>
-    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-      <div class="panel-body">
-        While ferrets themselves are expensive to purchase, upkeep and care will be an ongoing cost as well. Money must be spent routinely on vaccinations which can be from $150 to $350. Along with veterinary care ferrets require a good diet, deodorizing cleaners, vitamin supplements, shampoos, and of course any extra expenses such as collars and toys.
+    </section>
+
+    <section id="sectionThree">
+      <div class="row">
+        <div class="col-md-2 col-md-offset-1">
+          <h2>Health</h2>
+          <hr>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-9 col-md-offset-1">
+          <div class="media">
+            <div class="media-left">
+              <a href="#">
+                <img class="media-object" src="m3.png">
+              </a>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading">Viruses</h4>
+              Ferrets are susceptible to colds and flus. Symptoms are similar to human illness, and can be treated with an antihistamine.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row p-t-md">
+       <div class="col-md-9 col-md-offset-1">
+          <div class="media">
+            <div class="media-left">
+              <a href="#">
+                <img class="media-object" src="m2.png">
+              </a>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading">Diet</h4>
+              A good diet consists of high protein ferret chow fed two to four times a day. In addition they can be given meat based treats, cooked eggs, and cooked meat.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row p-t-md"> 
+        <div class="col-md-9 col-md-offset-1">
+          <div class="media">
+            <div class="media-left">
+              <a href="#">
+                <img class="media-object" src="m1.png">
+              </a>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading">Vitamins</h4>
+              For optimal health, ferrets require vitamins and supplements just like people do. Such supplements include digestive, fur, and high calorie treatments.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row p-t-md">
+        <div class="col-md-9 col-md-offset-1">
+          <div class="media">
+            <div class="media-left">
+              <a href="#">
+                <img class="media-object" src="m4.png">
+              </a>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading">Heat Stroke</h4>
+              Ferrets cannot sweat, making it hard for them to tolerate any temperature above 80 degrees. A heavily panting ferret may indicate over heating, and should be covered in cool towels.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sectionFour">
+      <div class="block text-center">
+        <h1 class="block-title">Adopt Today</h1>
+        <h4 class="text-muted">Find A Ferret Adoption Center Near You!</h4>
+        <button class="btn btn-info m-t">Search</button>
+      </div>
+    </section>
+
+<!--     <section id="sectionFive">
+      <div class="col-md-6">
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingOne">
+              <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Is my ferret legal?
+                </a>
+              </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+              <div class="panel-body">
+                There are different regulations depending on your country, state, or city concerning the legality of owning a ferret. Information regarding your area's regulations can be found through your local Human Society or a veterinarian.
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingTwo">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Can I afford a ferret?
+                </a>
+              </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+              <div class="panel-body">
+                While ferrets themselves are expensive to purchase, upkeep and care will be an ongoing cost as well. Money must be spent routinely on vaccinations which can be from $150 to $350. Along with veterinary care ferrets require a good diet, deodorizing cleaners, vitamin supplements, shampoos, and of course any extra expenses such as collars and toys.
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingThree">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Can I train a ferret?
+                </a>
+              </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+              <div class="panel-body">
+                Most domestic ferrets are not inherently aggressive, however ferrets are hunters by nature. They must be taught proper behavior such as not to nip or bite. You must put in the time and energy in order to have a responsive, well mannered pet. Training can be rewarding, as ferrets can be litter trained as well as learn a few tricks.
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingThree">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  Is my home suitable for a ferret?
+                </a>
+              </h4>
+            </div>
+            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+              <div class="panel-body">
+                As stated before, ferrets are instinctual hunters. They will not do well around animals such as birds, fish, rodents, or lizards. Ferrets are also not advised to be around small children without supervision. As they like to dig and chew, electrical cords and furniture must be protected.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div id="carousel-example-generic-2" class="carousel carousel-light slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic-2" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic-2" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic-2" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img src="fert.jpg">
+            </div>
+            <div class="item">
+              <img src="ferret.jpg" alt="Second slide">
+            </div>
+            <div class="item">
+              <img src="creating-gentle-ferrets.jpg" alt="Third slide">
+            </div>
+          </div>
+          <a class="left carousel-control" href="#carousel-example-generic-2" role="button" data-slide="prev">
+            <span class="icon icon-chevron-thin-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic-2" role="button" data-slide="next">
+            <span class="icon icon-chevron-thin-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </div> -->
+
+  <section id="sectionFive">
+    <div class="text-center p-b-lg">
+      <div class="">
+          <blockquote class="pull-quote">
+            <p>
+              "Ferret Central is a group dedicated to helping people find top quality ferret products"
+            </p>
+            <cite>Jane Doe, co-owner of FerretCentral™</cite>
+          </blockquote>
       </div>
     </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingThree">
-      <h4 class="panel-title">
-        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          Can I train a ferret?
-        </a>
-      </h4>
-    </div>
-    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-      <div class="panel-body">
-        Most domestic ferrets are not inherently aggressive, however ferrets are hunters by nature. They must be taught proper behavior such as not to nip or bite. You must put in the time and energy in order to have a responsive, well mannered pet. Training can be rewarding, as ferrets can be litter trained as well as learn a few tricks.
-      </div>
-    </div>
-  </div>
-    <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingThree">
-      <h4 class="panel-title">
-        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-          Is my home suitable for a ferret?
-        </a>
-      </h4>
-    </div>
-    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-      <div class="panel-body">
-        As stated before, ferrets are instinctual hunters. They will not do well around animals such as birds, fish, rodents, or lizards. Ferrets are also not advised to be around small children without supervision. As they like to dig and chew, electrical cords and furniture must be protected.
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="row">
-  <div class="col-md-6">
-
-
-  </div>
-  <div class="col-md-6">
-
-<div id="carousel-example-generic-2" class="carousel carousel-light slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-example-generic-2" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-generic-2" data-slide-to="1"></li>
-    <li data-target="#carousel-example-generic-2" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <img src="http://image.wikifoundry.com/image/1/12STUJ6BzMC9vmNuwVGj1g14171/GW380H380" alt="First slide">
-    </div>
-    <div class="item">
-      <img src="http://ferretfriendsaz.com/wp-content/uploads/2013/09/Adorable-White-Ferret-ferrets-13819143-800-800.png" alt="Second slide">
-    </div>
-    <div class="item">
-      <img src="http://discovermagazine.com/~/media/import/images/1/3/a/ferret.jpg" alt="Third slide">
-    </div>
-  </div>
-  <a class="left carousel-control" href="#carousel-example-generic-2" role="button" data-slide="prev">
-    <span class="icon icon-chevron-thin-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#carousel-example-generic-2" role="button" data-slide="next">
-    <span class="icon icon-chevron-thin-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-<p>Every ferret is unique, coming in different shapes, sizes, and colors.</p>
-  </div>
-
-</div>
-      
+  </section>            
 
 
 
@@ -148,17 +335,9 @@
 
 
 
-
-
-
-
-
-
-
-
-
-    <!-- Include jQuery (required) and the JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="toolkit.min.js"></script>
-  </body>
+<!-- Include jQuery (required) and the JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="toolkit.min.js"></script>
+<script src="index.js"></script>
+</body>
 </html>
